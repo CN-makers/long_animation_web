@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  
+
+  </div>
+</nav>
+
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LongAnimation: Long Animation Generation  with Dynamic Global-Local  Memory</h1>
+            <div class="column is-full_width">
+            </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://cn-makers.github.io/">Nan Chen</a><sup>1</sup>, 
+              <a href="https://corleone-huang.github.io/">Mengqi Huang</a><sup>1</sup>, 
+              <a href="https://yihao-meng.github.io/">Yihao Meng</a><sup>2</sup>, 
+              <a href="https://scholar.google.com/citations?user=m-0P8sgAAAAJ&hl=zh-CN">Zhendong Mao</a><sup>†,1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>1</sup>USTC <sup>2</sup>HKUST <sup>†</sup>corresponding author
+            </span>
+          </div>
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (coming sonon)</span>
+                </a>
+              </span>
+              <!-- Uncomment the following sections if needed -->
+              
+
+              
+              <span class="link-block">
+                <a href="https://github.com/CN-makers/LongAnimation"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming sonon)</span>
+                </a>
+              </span>
+              
+              <!-- 
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                </a>
+              </span>
+              -->
+            </div>
+          </div>
+
+          
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                
+
+                <span class="link-block">
+                  <a href="#our_results_container"
+                     class="external-link button is-normal is-rounded">
+                    <span>Gallery</span>
+                  </a>
+                </span>
+
+
+                
+                <span class="link-block">
+                  <a href="#comparisons"
+                     class="external-link button is-normal is-rounded">
+                    <span>Qualitative comparison</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="#Creative_usage"
+                     class="external-link button is-normal is-rounded">
+                    <span>Creative Usage</span>
+                  </a>
+                </span>          
+
+                
+
+                <span class="link-block">
+                  <a href="#ablation-experiment"
+                     class="external-link button is-normal is-rounded">
+                    <span>Ablation Experiment</span>
+                  </a>
+                </span>
+              
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Gallery Title -->
+        <div class="columns is-centered has-text-centered" id="our_results_container">
+            <div class="column">
+                <h2 class="title is-3" style="margin-bottom: 40px;">Gallery</h2>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <div style="display: flex; justify-content: space-between; width: 816px; margin-bottom: 10px;">
+                <p style="font-weight: bold; color: black;">Reference</p>
+                <p style="font-weight: bold; color: black;">Line art</p>
+                <p style="font-weight: bold; color: black;">Result</p>
+            </div>
+            <video width="1536" height="1152" controls>
+              <source src="show_case/showcase_1.mp4" type="video/mp4">
+            </video>
+
+            <p>  
+              If you want to change the color of the girls' dresses, <i> LongAnimation </i> can generate a video of the girls wearing different colored dresses by  changing the dress colors in the reference image. This indicates that our method can generate long-term color-consistent videos with a high degree of freedom by freely changing the colors of the reference image. The frame rate is 30 fps.
+            </p>
+            <video width="1536" height="1152" controls>
+              <source src="show_case/showcase_2.mp4" type="video/mp4">
+            </video>
+
+            <video width="1536" height="1152" controls>
+              <source src="show_case/showcase_3.mp4" type="video/mp4">
+            </video>
+
+            <video width="1536" height="1152" controls>
+              <source src="show_case/showcase_4.mp4" type="video/mp4">
+            </video>
+
+            <video width="1536" height="1152" controls>
+              <source src="show_case/showcase_5.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- 
+  <div class="slider">
+    <div class="carousel results-carousel">
+        
+        <div class="item-steve">
+            <div class="gif-wrapper">
+                <img src="show_case_2/image21.gif" alt="GIF Animation">
+            </div>
+            <div class="gif-wrapper">
+                <img src="show_case_2/image22.gif" alt="GIF Animation">
+            </div>
+            <div class="gif-wrapper">
+                <img src="show_case_2/image23.gif" alt="GIF Animation">
+            </div>
+        </div>
+     
+        <div class="slider-item">
+            <div class="gif-wrapper">
+                <img src="show_case_2/image24.gif" alt="GIF Animation">
+            </div>
+            <div class="gif-wrapper">
+                <img src="show_case_2/image25.gif" alt="GIF Animation">
+            </div>
+            <div class="gif-wrapper">
+                <img src="show_case_2/image26.gif" alt="GIF Animation">
+            </div>
+        </div>
+        
+    </div>
+</div> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motivation</h2>
+
+        <img src="show_case\intro.png"  width="1536">
+        <div class="content has-text-justified">
+          <p>Existing studies achieve local color consistency by fusing the overlaps of adjacent video segments,  suffering low long-term color consistency. (b) Our dynamic global-local paradigm dynamically extracts color features of global historical segments as global memory and the color features of the latest generated segment as local memory,  achieving high long-term color consistency. All segments are generated from one same reference image.</p>
+         
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Animation colorization is a crucial part of real animation industry production. Long animation colorization has high labor costs. Therefore, automated long animation colorization based on the video generation model has significant research value. Existing studies are limited to short-term colorization. These studies adopt a local paradigm, fusing overlapping features to achieve smooth transitions between local segments. However, the local paradigm neglects global information, failing to maintain long-term color consistency. In this study, we argue that ideal long-term color consistency can be achieved through a <strong>dynamic global-local paradigm</strong>, i.e., dynamically extracting global color consistent features relevant to the current generation. Specifically, we propose <strong><em>LongAnimation</em></strong>, a novel framework, which mainly includes a SketchDiT, a Dynamic Global-Local Memory (DGLM), and a Color Consistency Reward. The SketchDiT captures hybrid reference features to support the DGLM module. The DGLM module employs a long video understanding model to dynamically compress global historical features and adaptively fuse them with the current generation features. To refine the color consistency, we introduce a Color Consistency Reward. During inference, we propose a color consistency fusion to smooth the video segment transition. Extensive experiments on both short-term (14 frames) and long-term (average 500 frames) animations show the effectiveness of <em>LongAnimation</em> in maintaining short-term and long-term color consistency for open-domain animation colorization task.</p>
+         
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </section>
+  
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+  <div class="columns is-centered" id="comparisons">
+    <div class="column is-full-width">
+      <h2 class="title is-3">Qualitative Comparison</h2>
+
+
+<h2 id="comparison_with_baseline_container" align="left"><a name="image-results" id="image-results"></a>Comparisons with previous methods</h2>
+
+
+<br>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+  
+  <h2><b>Reference Image </b></h2>
+  <img src="show_case\concatenated_image.png" alt="Reference Image" width="1536">
+
+  <p> As shown in the following video, our method has better long-term color consistency compared to previous methods. LVCD* denotes LVCD guided by grayscale sketches, while the other methods all use binarized sketches. </p>
+  
+
+  <p>In the video below, our method maintains better long-term color consistency for the girl's dress and the leaves, while other methods fail to achieve this.</p>
+  <video width="1536" height="1152" controls>
+    <source src="show_case/comparison_1.mp4" type="video/mp4">
+   
+  </video>
+  
+  <br>
+  <p> In the video below, our method maintains better long-term color consistency.</p>
+
+
+
+  <video width="1536" height="1152" controls>
+    <source src="show_case/comparison_2.mp4" type="video/mp4">
+   
+  </video>
+
+  <br>
+  
+  <p> In the video below, our method maintains better long-term color consistency.</p>
+
+
+  <video width="1536" height="1152" controls>
+    <source src="show_case/comparison_3.mp4" type="video/mp4">
+   
+  </video>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+    <div class="columns is-centered" id="Creative_usage">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Creative usage</h2>
+
+
+
+        <h3 class="title is-4">Text-guided Background Generation</h3>
+        <div class="content has-text-justified">
+          <p>
+            <p>Given a segmented foreground reference image and line sketches, <b><i>longAnimation</i></b> can generate long-term  dynamic background for the foreground based on the provided prompt.  Previous methods could not achieve this function.</p>
+          </p>
+        </div>
+    
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+
+        <br>
+        <p>A boy and a girl are sitting <b> on a sandy beach </b>.</p>
+        <video width="1536" height="1152" controls>
+          <source src="show_case/text_1.mp4" type="video/mp4">
+        
+        </video>
+        <br>
+        <p>A boy and a girl are sitting <b> in the forest </b>.</p>
+        <video width="1536" height="1152" controls>
+            <source src="show_case/text_2.mp4" type="video/mp4">
+          
+        </video>
+        <br>
+        <p>A boy and a girl are sitting <b> in the park </b>.</p>
+        <video width="1536" height="1152" controls>
+            <source src="show_case/text_3.mp4" type="video/mp4">
+          
+          </video>
+   
+        </div>
+
+
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <!-- Animation. -->
+  <div class="columns is-centered" id="">
+    <div class="column is-full-width">
+      <h2 class="title is-3" id="ablation-experiment">Ablation Experiment</h2>        
+      <div class="content has-text-justified">
+        <p>
+          To demonstrate the effectiveness of essential components, we conduct extensive ablation experiments. 
+        </p>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          First, we evaluate  the effectiveness of each module for  <b><i> LongAnimation</i></b>. Compared to using only SketchDiT, our <b>Dynamic Global-Local Memory (DGLM)</b> mechanism significantly enhances the long-term color consistency of the animation (e.g., the constantly changing hair color of a little girl), while the color consistency reward (CCR) further refines certain details (e.g., the girl's hairband).
+        </p>
+      </div>
+
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+        <video width="1536" height="1152" controls>
+          <source src="ablation_study/ablation_1.mp4" type="video/mp4">
+         
+        </video>
+
+
+        <div class="content has-text-justified">
+          <p>
+            Next, we evaluate  the effectiveness of Local Color Fusion (LCF) for  <b><i> LongAnimation </i></b>. As shown in the following video, without using <b>Local Color Fusion (LCF)</b>, there are some rapid changes between stitched frames. Applying LCF from the early denoising process (<i>t_st=50</i>) results in abnormal brightness changes. Implementing LCF  from  the later denoising process (<i>t_st=20) achieves smoother transitions.
+          </p>
+        </div>
+  
+  
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+          <video width="1536" height="1152" controls>
+            <source src="ablation_study/ablation_2.mp4" type="video/mp4">
+           
+          </video>
+</section> 
+</body>
+</html>
